@@ -11,6 +11,13 @@ $(document).ready(()=>{
                     even this time too i couldn't make the most of the pagination`
     $('#sub-para').text(new_subpara)//change content of html content
 
-    $('.my-image').attr('src',"pic1.jpg")
+    $('.my-image').attr('src',"pic1.jpg")//set src attribute
+
+    $('.paragraph').append('Some extra skills??') //add at end of the element
+    $('.paragraph').prepend('prepend text') //add at start of the element
+
+    //$('#sub-head').remove() //remove the element from dom
+
+    $('#sub-head').empty() //empty the contents of the element
    
 })
