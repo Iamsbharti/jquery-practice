@@ -19,5 +19,19 @@ $(document).ready(()=>{
     //$('#sub-head').remove() //remove the element from dom
 
     $('#sub-head').empty() //empty the contents of the element
+
+    //event handlers
+    $('#buttonId').click(()=>{
+        $('#sub-para').addClass('big-font')
+    })
+
+    $('#anchor').dblclick(()=>{
+        $('#sub-para').css('color','red')
+    })
+
+    $('#image').hover(()=>{
+        $('#image').hide("5000")
+    })
+
    
 })

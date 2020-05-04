@@ -93,3 +93,6 @@ body {
   margin-right: 10px;
   width: 25px;
 }
+.big-font {
+  font-size: 1.3rem;
+}
