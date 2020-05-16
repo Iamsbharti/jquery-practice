@@ -24,6 +24,16 @@ let showData = () => {
         $("#showData").append(row);
       }
     },
+    beforeSend: () => {
+      $("#para").text("fetching data");
+    },
+    complete: () => {
+      $("#para").text("Data fetched");
+    },
+    error: (data) => {
+      alert("Error calling api");
+    },
+    timeout: 3000,
   });
 };
 let clearData = () => {
