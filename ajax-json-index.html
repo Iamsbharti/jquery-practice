@@ -7,7 +7,7 @@
       content="width=device-widht,initial-scale=1.0,user-scalable=no"
     />
     <script src="jquery-3.5.0.min.js"></script>
-    <script src="fb.ajax.js"></script>
+    <script src="ajax_util.js"></script>
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,12 +18,18 @@
   </head>
   <body>
     <section>
-      <div class="container">
-        <div class="mt-5 card col-6">
-          <span class="badge badge-danger mt-6" id="error"></span>
-          <span class="badge badge-dark mt-5" id="username"></span>
-          <span class="badge badge-success mt-5" id="quote"></span>
-          <img src="" id="profile" class="mt-5" />
+      <div id="showData" class="container">
+        <div class="row mt-5">
+          <div class="col mb-5">
+            <button id="btnShow" class="btn btn-primary">Show Data</button>
+            <button id="clearData" class="btn btn-primary">Clear Data</button>
+          </div>
+        </div>
+        <p id="para" class="badge badge-dark"></p>
+
+        <div class="row">
+          <div class="col">Astronout's Name</div>
+          <div class="col">SpaceCraft</div>
         </div>
       </div>
     </section>
